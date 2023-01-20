@@ -10,24 +10,114 @@ let caja2 = document.getElementById("caja2")
 
 let mensaje = document.getElementById("mensaje")
 
-function bucle(){
+// function bucle(){
 
-    let valor1 = parseInt(caja1.value);
-    console.log(valor1)
-    let valor2 = parseInt(caja2.value);
+//     let valor1 = parseInt(caja1.value);
+//     console.log(valor1)
+//     let valor2 = parseInt(caja2.value);
 
    
-    let resultado = "";
+//     let resultado = "";
 
-     resultado += "<ul>"
+//      resultado += "<ul>"
 
-    for(let i = valor1; i <= valor2; i++) {
-        console.log(i)
+//     for(let i = valor1; i <= valor2; i++) {
+//         console.log(i)
 
-        resultado += "<li>" + i +"</li>"
-     }
+//         resultado += "<li>" + i +"</li>"
+//      }
 
-     resultado += "</ul>"
+//    resultado += "</ul>"
 
-     mensaje.innerHTML = resultado; 
-} 
+//     mensaje.innerHTML = resultado; 
+// } 
+
+
+// SELECIONAR SOLO LOS NÚMEROS IMPARES
+
+//  function bucle(){
+
+//      let valor1 = parseInt(caja1.value);
+//      let valor2 = parseInt(caja2.value);
+   
+//      let resultado = "";
+
+//       resultado += "<ul>"
+
+//      for(let i = valor1; i <= valor2; i++) {
+        
+//          if(i % 2 !== 0){
+//              resultado += "<li>" + i +"</li>"
+//          }         
+//       }
+
+//       resultado += "</ul>"
+
+//       mensaje.innerHTML = resultado; 
+//  } 
+
+
+ // IMPRIMIR EL RANGO CADA 3
+
+//  function bucle(){
+
+//     let valor1 = parseInt(caja1.value);
+//     let valor2 = parseInt(caja2.value);
+  
+//     let resultado = "";
+
+//      resultado += "<ul>"
+
+//     for(let i = valor1; i <= valor2; i= i + 3) {
+                
+//             resultado += "<li>" + i +"</li>"
+               
+//      }
+
+//      resultado += "</ul>"
+
+//      mensaje.innerHTML = resultado; 
+// } 
+
+
+// Inserta en un formulario una casilla de verdificación(checkbox) vinculado a un enlace sobre privacidad.
+
+
+
+function clicado(){
+        let checkBox = document.getElementById("checkbox")
+
+        let boton = document.getElementById("btn1")
+
+        if(checkBox.checked){
+
+            return !dishabled
+
+        } else {
+        
+            return dishabled
+
+        }
+
+}
+
+
+function bucle(){
+
+        let valor1 = parseInt(caja1.value);
+        let valor2 = parseInt(caja2.value);
+
+        let resultado = "";
+
+        resultado += "<ul>"
+
+        for(let i = valor1; i <= valor2; i= i + 3) {
+                
+                resultado += "<li>" + i +"</li>"
+                
+        }
+
+        resultado += "</ul>"
+
+        mensaje.innerHTML = resultado; 
+ } 
