@@ -87,18 +87,15 @@ let mensaje = document.getElementById("mensaje")
 function clicado(){
         let checkBox = document.getElementById("checkbox")
 
-        let boton = document.getElementById("btn1")
+        if(!checkBox.checked){
 
-        if(checkBox.checked){
-
-            return !dishabled
+        document.getElementById('btn1').disabled = true;
 
         } else {
         
-            return dishabled
+        document.getElementById('btn1').disabled = false;
 
         }
-
 }
 
 
