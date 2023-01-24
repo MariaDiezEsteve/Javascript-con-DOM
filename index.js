@@ -86,14 +86,14 @@ let mensaje = document.getElementById("mensaje")
 
 function clicado(){
         let checkBox = document.getElementById("checkbox")
+        
+        if(checkBox.checked){
 
-        if(!checkBox.checked){
-
-        document.getElementById('btn1').disabled = true;
+        document.getElementById('btn1').disabled = false;
 
         } else {
         
-        document.getElementById('btn1').disabled = false;
+        document.getElementById('btn1').disabled = true;
 
         }
 }
@@ -108,7 +108,7 @@ function bucle(){
 
         resultado += "<ul>"
 
-        for(let i = valor1; i <= valor2; i= i + 3) {
+        for(let i = valor1; i <= valor2; i++) {
                 
                 resultado += "<li>" + i +"</li>"
                 
@@ -118,3 +118,7 @@ function bucle(){
 
         mensaje.innerHTML = resultado; 
  } 
+
+
+
+
